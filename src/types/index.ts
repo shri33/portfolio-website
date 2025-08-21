@@ -1,4 +1,4 @@
-export interface Project {
+export type Project = {
   id: string
   title: string
   description: string
@@ -8,6 +8,7 @@ export interface Project {
   image?: string
   featured?: boolean
   status?: 'completed' | 'in-progress' | 'coming-soon'
+  highlights?: string[]
 }
 
 export interface Skill {

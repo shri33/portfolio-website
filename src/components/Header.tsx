@@ -31,6 +31,7 @@ export default function Header() {
             <Link href="#about" className="hover:text-primary transition-colors focus-ring rounded">About</Link>
             <Link href="#projects" className="hover:text-primary transition-colors focus-ring rounded">Projects</Link>
             <Link href="#skills" className="hover:text-primary transition-colors focus-ring rounded">Skills</Link>
+            <Link href="/resume" className="hover:text-primary transition-colors focus-ring rounded">Resume</Link>
             <Link href="#contact" className="hover:text-primary transition-colors focus-ring rounded">Contact</Link>
             <ThemeToggle />
           </div>
@@ -73,6 +74,13 @@ export default function Header() {
                 onClick={closeMobileMenu}
               >
                 Skills
+              </Link>
+              <Link 
+                href="/resume" 
+                className="hover:text-primary transition-colors focus-ring rounded px-2 py-1"
+                onClick={closeMobileMenu}
+              >
+                Resume
               </Link>
               <Link 
                 href="#contact" 

@@ -1,0 +1,41 @@
+---
+title: "Image Magic — Virtual Staging & Shopify Image Optimizer"
+date: "2025-08-22"
+description: "AI-driven virtual staging and image optimisation pipeline for Shopify product catalogs."
+---
+
+# Image Magic — Virtual Staging & Shopify Image Optimizer
+
+**Role:** Lead developer (frontend + image pipeline prototyping)  
+**Stack:** Next.js, React, Python image pipelines, OpenCV/ImageMagick, Vercel
+
+## Problem
+E-commerce listings often suffer from inconsistent product images — poor backgrounds, mismatched lighting, and low perceived quality. Manually staging images for thousands of SKUs is expensive and slow.
+
+## Solution
+I built **Image Magic**, a demo product that automates large parts of the staging and optimization pipeline:
+- Background removal and resizing pipelines using Python + ImageMagick/OpenCV.
+- Staging templates and composition engine to place products into curated scene photography (virtual staging).
+- Web UI (Next.js) for previewing batched results and downloading optimized assets.
+- Batch processing & queue system to scale over catalogs.
+
+## Architecture & key decisions
+- **Preprocessing**: background removal + alpha extraction using optimized Python scripts; outputs stored in cloud storage.
+- **Staging**: template-based composition to maintain consistent lighting and shadows.
+- **Frontend**: Next.js app with optimized `next/image`, progressive loading, and preview variants.
+- **Scale**: queue-based batch processing to handle catalog-size workloads, with simple horizontal scaling (Docker).
+
+## Outcome (draft — add numbers)
+- Showcased as a working demo (link in header).
+- Prototype reduces manual editing time per image (estimate TODO).
+- Ready to be extended into a Shopify app or backend microservice.
+
+## What I learned
+- Production image pipelines require careful memory & CPU budgeting; parallelization strategies are critical.
+- UX matters for batch tools — preview + rollback saved more time than additional automation initially.
+
+**Screenshots:**  
+- `/images/project-virtual-staging.png` (hero)  
+- add step-by-step pipeline screenshots here
+
+**Links:** Demo — https://image-magic-fmvp.vercel.app/ · Repo — https://github.com/shri33/AI-Powered-Shopify-Product-Image-Optimizer-Virtual-Staging-Tool

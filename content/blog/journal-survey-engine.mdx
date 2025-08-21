@@ -1,0 +1,28 @@
+---
+title: "Journal Survey Engine — Research Survey & Data Pipeline"
+date: "2025-08-22"
+description: "Survey engine built for research/ML experiment data collection and pipeline integration."
+---
+
+# Journal Survey Engine — Research Survey & Data Pipeline
+
+**Role:** Contributor (integration + front-end forms)  
+**Stack:** Node.js, React, Postgres, Docker
+
+## Problem
+Research and ML experiments need structured, exportable survey data that can be fed directly into model training pipelines. Generic survey tools often lack the hooks for consistent ML feature extraction.
+
+## What I built
+- Modular survey templates with export to CSV/JSON for ingestion.
+- Web UI for creating and running multi-stage surveys and journaling entries.
+- Server-side endpoints for exports and webhook integration into ML pipelines.
+
+## Architecture
+- Backend: Node + Postgres, API endpoints for survey lifecycle management.
+- Frontend: React forms with validation and persistence.
+- MLOps hooks: export endpoints and webhook triggers to pipeline orchestrators.
+
+## Outcome / next steps
+- Repo ready for adaptation to research projects; add authentication and role-based access control for production usage.
+
+**Links:** Repo — https://github.com/mlops-and-cloud-db/journal-survey-engine

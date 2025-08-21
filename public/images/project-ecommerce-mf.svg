@@ -1,0 +1,11 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#7c3aed"/>
+  <rect x="100" y="100" width="1000" height="475" rx="12" fill="#8b5cf6"/>
+  <rect x="200" y="180" width="200" height="250" rx="8" fill="#a78bfa"/>
+  <rect x="450" y="180" width="500" height="80" rx="8" fill="#c4b5fd"/>
+  <rect x="450" y="280" width="500" height="60" rx="8" fill="#ddd6fe"/>
+  <rect x="450" y="360" width="300" height="40" rx="8" fill="#ede9fe"/>
+  <rect x="450" y="420" width="200" height="40" rx="20" fill="#f3f4f6"/>
+  <text x="600" y="500" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">E-commerce Microfrontend</text>
+  <text x="600" y="530" text-anchor="middle" fill="#ede9fe" font-family="Arial" font-size="16">Performance-first Product Page</text>
+</svg>

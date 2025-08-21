@@ -1,0 +1,10 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="#1e40af"/>
+  <rect x="100" y="100" width="1000" height="475" rx="12" fill="#3b82f6"/>
+  <circle cx="200" cy="200" r="40" fill="#60a5fa"/>
+  <rect x="300" y="160" width="600" height="80" rx="8" fill="#93c5fd"/>
+  <rect x="300" y="280" width="400" height="40" rx="4" fill="#dbeafe"/>
+  <rect x="300" y="340" width="500" height="40" rx="4" fill="#dbeafe"/>
+  <text x="600" y="420" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Image Magic - Virtual Staging</text>
+  <text x="600" y="450" text-anchor="middle" fill="#dbeafe" font-family="Arial" font-size="16">AI-Powered Shopify Image Optimizer</text>
+</svg>

@@ -1,0 +1,31 @@
+---
+title: "AI-Powered Shopify Product Image Optimizer — Repo Walkthrough"
+date: "2025-08-22"
+description: "Repository and pipeline for automating product image improvements for e-commerce."
+---
+
+# AI-Powered Shopify Product Image Optimizer — Repo Walkthrough
+
+**Role:** Repo maintainer & implementer  
+**Stack:** Python, Node.js, Next.js, Docker
+
+## Overview
+This repository contains the proof-of-concept and automation scripts for: background removal, image cropping, template staging, and a sample Next.js demo UI. The repo is organized into backend scripts (Python), a simple API layer (Node.js), and a Next.js frontend for demos.
+
+## Notable features
+- Re-usable image processing scripts with CLI entrypoints
+- Example Next.js integration for batch uploads and preview
+- Dockerfile for reproducible environment and local testing
+
+## How to run locally (repo README should include; copy here)
+1. Clone repo.
+2. Create virtual environment and install Python deps: `pip install -r requirements.txt`
+3. Run demo Next.js: `cd frontend && npm install && npm run dev`
+4. Run image processing pipeline: `python scripts/process_batch.py --input ./samples`
+
+## What to add next (roadmap)
+- Production-grade queue & retry (e.g., Celery / Redis)
+- Shopify app wrapper (OAuth + per-shop queues)
+- Metrics for success (upload -> publish pipeline speed, image quality scores)
+
+**Links:** Repo — https://github.com/shri33/AI-Powered-Shopify-Product-Image-Optimizer-Virtual-Staging-Tool · Demo — https://image-magic-fmvp.vercel.app/

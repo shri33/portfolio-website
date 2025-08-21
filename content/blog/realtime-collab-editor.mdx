@@ -1,0 +1,32 @@
+---
+title: "Realtime Collaborative Editor — CRDT, WebRTC & Offline Sync"
+date: "2025-08-22"
+description: "Built a production-like collaborative editor using CRDTs for conflict-free merges, WebRTC for low-latency peer updates, and a server fallback for reliability."
+---
+
+# Realtime Collaborative Editor — CRDT, WebRTC & Offline Sync
+
+**Role:** Solo engineer (Design, Frontend, Realtime protocol, infra)  
+**Stack:** Next.js, TypeScript, React, Yjs (CRDT), WebRTC, Redis (presence/signaling), Docker, Vitest
+
+## Problem
+Most collaborative editor demos break when multiple users edit simultaneously or when a client goes offline and later reconnects. I wanted to build a robust editor that *actually* handles real-world constraints: concurrent edits, network partitions and eventual convergence.
+
+## My approach
+- **Data model:** Used a CRDT library (Yjs) to guarantee conflict-free merges and deterministic convergence across clients.
+- **Transport:** Built a WebRTC peer mesh for low-latency updates and a signaling + server relay (Node/Express) fallback for NATs and offline recovery.
+- **Offline first:** Edits persist locally (IndexedDB). On reconnect the CRDT sync merges changes without lost edits.
+- **Presence & UX:** Presence indicators, per-user caret colors, and a minimal activity log to show edit history.
+- **Testing & reliability:** Unit tests for merge scenarios, integration tests with headless browsers to simulate concurrent edits, and basic load testing (50 concurrent editors).
+
+## Architecture (short)
+- Client: Next.js React app, Yjs document state, WebRTC + fallback websocket.
+- Server: Signaling + optional persistence layer for historical documents (Redis + Postgres).
+- CI: Vitest unit tests + Playwright (integration smoke tests) in GitHub Actions.
+
+## Outcome & learnings
+- **Technical:** Demonstrated correct convergence for hundreds of edit operations in automated tests; reduced sync latency under ideal network to <150ms.
+- **Product:** UX feels stable across joins/leaves and offline-reconnect — ready to be extended into a full collaborative product.
+- **Next steps:** Add per-document ACLs, CRDT-aware operational transforms metrics, and production-grade persistence.
+
+**Links:** Demo — `TODO` · Repo — `TODO`
