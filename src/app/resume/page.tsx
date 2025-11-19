@@ -444,7 +444,7 @@ export default function ResumePage() {
               <ul className="space-y-1 text-gray-700 dark:text-gray-300 ml-4">
                 <li>• Created visual content to communicate messages effectively</li>
                 <li>• Applied visual hierarchy and page layout techniques</li>
-                <li>• Used typography and pictures to meet users' specific needs</li>
+                <li>• Used typography and pictures to meet users&apos; specific needs</li>
                 <li>• Optimized user experience through interactive design logic</li>
               </ul>
             </div>
@@ -504,7 +504,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"I really enjoyed working with Shri. She's capable of shipping a whole solution with a general collection of feature direction. She also provides documentation on how to run the software"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;I really enjoyed working with Shri. She&apos;s capable of shipping a whole solution with a general collection of feature direction. She also provides documentation on how to run the software&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$2,936.66 earned</span>
                 <span className="text-gray-600 dark:text-gray-400">$20/hr</span>
@@ -529,7 +529,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"Shri is professional and great when narrowing down feature scope"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;Shri is professional and great when narrowing down feature scope&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$165.00 fixed</span>
               </div>
@@ -551,7 +551,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"Great communicator and fantastic programmer"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;Great communicator and fantastic programmer&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$100.00 fixed</span>
               </div>
@@ -573,7 +573,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"Great job, great communication, will hire again"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;Great job, great communication, will hire again&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$125.00 fixed</span>
               </div>
@@ -591,7 +591,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"Shri is an outstanding QA person, she really helped us out with releasing new software, and reviewing AI images looking for artifacts"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;Shri is an outstanding QA person, she really helped us out with releasing new software, and reviewing AI images looking for artifacts&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$1,350.00 earned</span>
                 <span className="text-gray-600 dark:text-gray-400">Reviewed 1200+ images</span>
@@ -614,7 +614,7 @@ export default function ResumePage() {
                 <span className="text-yellow-500">★★★★★</span>
                 <span className="text-sm font-semibold">5.0</span>
               </div>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">"Cooperative and easy to work and communicate with. Understood the task immediately. She stepped up to help me out at short notice"</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-2 italic">&ldquo;Cooperative and easy to work and communicate with. Understood the task immediately. She stepped up to help me out at short notice&rdquo;</p>
               <div className="flex gap-4 text-sm">
                 <span className="text-gray-600 dark:text-gray-400">$57.50 earned</span>
                 <span className="text-gray-600 dark:text-gray-400">$5/hr</span>
