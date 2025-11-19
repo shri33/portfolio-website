@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="genAIGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="documentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#genAIGrad)"/>
+  
+  <!-- Document/Case Study -->
+  <g transform="translate(250, 150)">
+    <rect x="0" y="0" width="300" height="380" fill="url(#documentGrad)" rx="10" stroke="#E5E7EB" stroke-width="3"/>
+    
+    <!-- Document lines (text) -->
+    <rect x="30" y="40" width="240" height="15" fill="#9CA3AF" opacity="0.6" rx="3"/>
+    <rect x="30" y="70" width="200" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+    <rect x="30" y="92" width="220" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+    
+    <!-- Image placeholder in document -->
+    <rect x="30" y="120" width="240" height="140" fill="#E5E7EB" rx="5"/>
+    <circle cx="150" cy="160" r="25" fill="#9CA3AF" opacity="0.4"/>
+    <polygon points="100,210 120,180 140,200 160,170 200,210" fill="#9CA3AF" opacity="0.4"/>
+    
+    <!-- More text lines -->
+    <rect x="30" y="280" width="240" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+    <rect x="30" y="302" width="210" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+    <rect x="30" y="324" width="230" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+    <rect x="30" y="346" width="180" height="12" fill="#9CA3AF" opacity="0.5" rx="3"/>
+  </g>
+  
+  <!-- AI Sparkle/Magic effect -->
+  <g transform="translate(400, 100)">
+    <!-- Large sparkle -->
+    <polygon points="0,-40 10,-15 35,-10 15,5 20,30 0,15 -20,30 -15,5 -35,-10 -10,-15" fill="#FFD700" opacity="0.95"/>
+    
+    <!-- Smaller sparkles around -->
+    <polygon points="120,50 125,60 135,60 128,67 130,77 120,72 110,77 112,67 105,60 115,60" fill="#FFD700" opacity="0.9"/>
+    <polygon points="-100,80 -95,90 -85,90 -92,97 -90,107 -100,102 -110,107 -108,97 -115,90 -105,90" fill="#FFD700" opacity="0.9"/>
+    <polygon points="80,-20 84,-12 92,-12 86,-6 88,2 80,-2 72,2 74,-6 68,-12 76,-12" fill="#FFA500" opacity="0.85"/>
+  </g>
+  
+  <!-- GitHub icon/logo -->
+  <g transform="translate(150, 250)">
+    <circle cx="0" cy="0" r="45" fill="#24292e" opacity="0.9"/>
+    <path d="M 0,-25 C -14,-25 -25,-14 -25,0 C -25,11 -17,20 -6,23 C -5,23 -4,22 -4,21 L -4,17 C -10,18 -11,14 -11,14 C -12,12 -13,11 -13,11 C -15,10 -13,10 -13,10 C -11,10 -10,12 -10,12 C -8,15 -5,14 -4,13 C -4,12 -3,11 -3,10 C -7,10 -11,8 -11,2 C -11,0 -10,-2 -9,-3 C -9,-3 -9,-5 -8,-7 C -8,-7 -6,-7 -4,-5 C -3,-5 -1,-6 0,-6 C 1,-6 3,-5 4,-5 C 6,-7 8,-7 8,-7 C 9,-5 9,-3 9,-3 C 10,-2 11,0 11,2 C 11,8 7,10 3,10 C 3,11 4,12 4,13 L 4,21 C 4,22 5,23 6,23 C 17,20 25,11 25,0 C 25,-14 14,-25 0,-25 Z" fill="white"/>
+  </g>
+  
+  <!-- Arrow pointing from GitHub to Document -->
+  <g transform="translate(200, 300)">
+    <path d="M 0,0 Q 20,-10 40,0" stroke="#FFF" stroke-width="4" fill="none" opacity="0.7" stroke-dasharray="5,5"/>
+    <polygon points="40,0 32,-5 32,5" fill="#FFF" opacity="0.7"/>
+  </g>
+  
+  <!-- AI Brain/Processor Icon -->
+  <g transform="translate(620, 300)">
+    <rect x="-50" y="-50" width="100" height="100" fill="white" opacity="0.2" rx="10"/>
+    <text x="0" y="15" font-family="monospace" font-size="48" font-weight="bold" fill="white" text-anchor="middle">AI</text>
+    
+    <!-- Circuit lines -->
+    <line x1="-50" y1="-30" x2="-60" y2="-30" stroke="white" stroke-width="3" opacity="0.6"/>
+    <line x1="50" y1="-30" x2="60" y2="-30" stroke="white" stroke-width="3" opacity="0.6"/>
+    <line x1="-50" y1="20" x2="-60" y2="20" stroke="white" stroke-width="3" opacity="0.6"/>
+    <line x1="50" y1="20" x2="60" y2="20" stroke="white" stroke-width="3" opacity="0.6"/>
+    
+    <circle cx="-60" cy="-30" r="4" fill="white" opacity="0.8"/>
+    <circle cx="60" cy="-30" r="4" fill="white" opacity="0.8"/>
+    <circle cx="-60" cy="20" r="4" fill="white" opacity="0.8"/>
+    <circle cx="60" cy="20" r="4" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Arrow from Document to AI -->
+  <g transform="translate(560, 330)">
+    <path d="M 0,0 Q 10,-5 20,0" stroke="#FFF" stroke-width="4" fill="none" opacity="0.7" stroke-dasharray="5,5"/>
+    <polygon points="20,0 12,-5 12,5" fill="#FFF" opacity="0.7"/>
+  </g>
+  
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle">Generative Project Assistant</text>
+  <text x="400" y="575" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">AI-Powered Case Study Generator</text>
+</svg>
