@@ -3,6 +3,7 @@ import ProjectGrid from '@/components/ProjectGrid'
 import ProfileCard from '@/components/ProfileCard'
 import SkillPill from '@/components/SkillPill'
 import GenerativeProjectForm from '@/components/GenerativeProjectForm'
+import Achievements from '@/components/Achievements'
 import { skills, skillCategories } from '@/data/skills'
 import { contactInfo, socials } from '@/data/socials'
 import { Github, Linkedin, Mail, MapPin, Briefcase, GraduationCap, Calendar, Phone, Globe } from 'lucide-react'
@@ -31,17 +32,22 @@ export default function HomePage() {
       <Hero />
 
       {/* About Section */}
-      <section id="about" className="max-w-6xl mx-auto px-4 py-16 animate-slide-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section id="about" className="max-w-6xl mx-auto px-4 py-20 animate-slide-up">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">About Me</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              {contactInfo.bio}
-            </p>
-            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              Currently working remotely in Web3 projects, developing React apps for blockchain applications while optimizing UI performance and collaborating with designers to implement wireframes and prototypes.
-            </p>
-            <div className="flex space-x-4">
+            <div className="prose prose-lg dark:prose-invert">
+              <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                {contactInfo.bio}
+              </p>
+              <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                Currently building scalable backend services at <span className="font-semibold text-primary">Turpin</span> with TypeScript and Supabase. Active open-source contributor to projects like <span className="font-semibold">Meshery (9.4k⭐)</span> and <span className="font-semibold">Pollinations (3.2k⭐)</span>, with 364 contributions in the last year.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3 pt-4">
               {socials.slice(0, 3).map((social) => {
                 const Icon = iconMap[social.icon as keyof typeof iconMap]
                 return (
@@ -50,10 +56,11 @@ export default function HomePage() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-accent transition-colors focus-ring rounded"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary transition-all duration-300 focus-ring hover:scale-105 shadow-md"
                     aria-label={social.name}
                   >
-                    {Icon && <Icon className="w-6 h-6" />}
+                    {Icon && <Icon className="w-5 h-5" />}
+                    <span className="text-sm font-medium">{social.name}</span>
                   </Link>
                 )
               })}
@@ -65,15 +72,19 @@ export default function HomePage() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16">
+      <section id="skills" className="py-20 bg-gradient-to-b from-transparent via-slate-50/50 to-transparent dark:via-slate-800/30">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-slate-50 dark:bg-slate-800/50 rounded-3xl p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Technical Skills</h2>
-            
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Technical Skills</h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-200 dark:border-slate-700">
             <div className="grid md:grid-cols-3 gap-8">
               {Object.entries(groupedSkills).map(([category, categorySkills]) => (
-                <div key={category} className="space-y-4">
-                  <h3 className={`text-xl font-semibold ${skillCategories[category as keyof typeof skillCategories].color}`}>
+                <div key={category} className="space-y-4 group">
+                  <h3 className={`text-xl font-bold flex items-center gap-2 ${skillCategories[category as keyof typeof skillCategories].color} group-hover:scale-105 transition-transform duration-300`}>
+                    <span className="w-1.5 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></span>
                     {skillCategories[category as keyof typeof skillCategories].title}
                   </h3>
                   <div className="flex flex-wrap gap-2">
@@ -89,11 +100,12 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            A collection of projects showcasing my skills in frontend development, from NFT marketing websites to AI-powered tools.
+      <section id="projects" className="max-w-6xl mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Featured Projects</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-4"></div>
+          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            A collection of projects showcasing my expertise in full-stack development, from AI-powered tools to scalable web applications.
           </p>
         </div>
         
@@ -112,15 +124,16 @@ export default function HomePage() {
           <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold">Front-End Developer</h3>
-                <p className="text-primary font-medium">Web3 • Remote</p>
+                <h3 className="text-xl font-semibold">Back-End Engineer</h3>
+                <p className="text-primary font-medium">Turpin • Remote</p>
               </div>
-              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">Jan 2023 - Present</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">2025 - Present</span>
             </div>
             <ul className="text-slate-600 dark:text-slate-300 space-y-2">
-              <li>• Developed React apps for blockchain/Web3 projects</li>
-              <li>• Optimized UI performance and code quality</li>
-              <li>• Collaborated with designers to implement wireframes and prototypes using Figma and Adobe XD</li>
+              <li>• Building scalable backend services with TypeScript & Supabase</li>
+              <li>• Designing robust APIs & role-based authentication systems</li>
+              <li>• Optimizing database schemas and query performance</li>
+              <li>• Implementing CI/CD pipelines with zero-downtime deployments</li>
             </ul>
           </div>
 
@@ -128,31 +141,32 @@ export default function HomePage() {
           <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold">Front-End Developer</h3>
-                <p className="text-primary font-medium">Freelancer • Remote</p>
+                <h3 className="text-xl font-semibold">Freelance Full-Stack Developer</h3>
+                <p className="text-primary font-medium">Self-Employed • Remote</p>
               </div>
-              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">May 2022 - Jul 2023</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">2025</span>
             </div>
             <ul className="text-slate-600 dark:text-slate-300 space-y-2">
-              <li>• Built responsive websites using React.js, Next.js, and modern CSS frameworks</li>
-              <li>• Implemented state management and asynchronous data fetching using Redux</li>
-              <li>• Gathered requirements and delivered high-quality projects</li>
+              <li>• Achieved 10+ client projects with consistent 5.0/5.0 ratings</li>
+              <li>• Engineered survey engine handling 200+ surveys with real-time analytics</li>
+              <li>• Built e-commerce solutions processing 10K+ monthly transactions</li>
+              <li>• Developed responsive UIs with 25% faster load times</li>
             </ul>
           </div>
 
-          {/* QA Test Engineer */}
+          {/* QA & ML Testing */}
           <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold">QA Test Engineer</h3>
-                <p className="text-primary font-medium">Upwork • Remote</p>
+                <h3 className="text-xl font-semibold">QA & ML Testing Specialist</h3>
+                <p className="text-primary font-medium">Various Projects • Remote</p>
               </div>
-              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">Oct 2021 - May 2022</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">2024</span>
             </div>
             <ul className="text-slate-600 dark:text-slate-300 space-y-2">
-              <li>• Conducted comprehensive manual testing for web, mobile, and desktop apps</li>
-              <li>• Wrote detailed test cases and maintained test documentation</li>
-              <li>• Reported and tracked defects using bug tracking tools</li>
+              <li>• Reviewed 10K+ ML dataset images, improving model accuracy by 20%</li>
+              <li>• Reduced release defects by 25% through comprehensive testing</li>
+              <li>• Executed 100+ manual test cases across web, mobile & desktop</li>
             </ul>
           </div>
 
@@ -160,19 +174,22 @@ export default function HomePage() {
           <div className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
               <div>
-                <h3 className="text-xl font-semibold">Intern</h3>
-                <p className="text-primary font-medium">CrowdUpss • Remote</p>
+                <h3 className="text-xl font-semibold">Software Engineer Intern</h3>
+                <p className="text-primary font-medium">Celebal Technologies • Remote</p>
               </div>
-              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">Jun 2021 - Dec 2021</span>
+              <span className="text-slate-500 dark:text-slate-400 text-sm mt-2 md:mt-0">Jun 2024 - Aug 2024</span>
             </div>
             <ul className="text-slate-600 dark:text-slate-300 space-y-2">
-              <li>• Assisted in web app development using HTML, CSS, and JavaScript</li>
+              <li>• Developed responsive web applications using React.js and modern JavaScript</li>
               <li>• Integrated new features and optimized existing functionality</li>
               <li>• Performed manual testing and documented bugs in Jira</li>
             </ul>
           </div>
         </div>
       </section>
+
+      {/* Achievements & Open Source */}
+      <Achievements />
 
       {/* Contact Section */}
       <section id="contact" className="max-w-6xl mx-auto px-4 py-16">

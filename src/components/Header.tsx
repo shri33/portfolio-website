@@ -20,11 +20,17 @@ export default function Header() {
     <header className="sticky top-0 z-40 glass-effect">
       <nav className="max-w-6xl mx-auto px-4 py-4" role="navigation" aria-label="Main navigation">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center space-x-2 focus-ring rounded-lg">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">S</span>
+          <Link href="/" className="flex items-center space-x-3 focus-ring rounded-lg group">
+            <div className="relative">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary via-accent to-primary rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 rotate-0 group-hover:rotate-6">
+                <span className="text-white font-bold text-xl">SS</span>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
             </div>
-            <span className="font-semibold text-lg">Shri Srivastava</span>
+            <div className="hidden sm:block">
+              <div className="font-bold text-lg bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Shri Srivastava</div>
+              <div className="text-xs text-slate-500 dark:text-slate-400">Back-End Engineer</div>
+            </div>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

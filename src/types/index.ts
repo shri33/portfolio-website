@@ -13,7 +13,7 @@ export type Project = {
 
 export interface Skill {
   name: string
-  category: 'frontend' | 'tools' | 'backend'
+  category: 'frontend' | 'backend' | 'tools' | 'languages' | 'aiml' | 'devops'
   proficiency: 'beginner' | 'intermediate' | 'advanced' | 'expert'
 }
 

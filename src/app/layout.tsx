@@ -8,14 +8,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shri33.github.io'),
-  title: 'Shri Srivastava — Frontend Developer',
-  description: 'Portfolio of Shri Srivastava — Innovative Frontend Developer with 3+ years of experience in React, Next.js, and modern web technologies',
-  keywords: ['Shri Srivastava', 'Frontend Developer', 'React', 'Next.js', 'Web Developer', 'JavaScript', 'TypeScript'],
+  title: 'Shri Srivastava — Back-End Engineer | Full-Stack Developer',
+  description: 'Portfolio of Shri Srivastava — Back-End Engineer with 3+ years of experience in TypeScript, Node.js, React, Next.js, and modern web technologies. Google Cybersecurity Certified.',
+  keywords: ['Shri Srivastava', 'Back-End Engineer', 'Full-Stack Developer', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Web Developer', 'JavaScript'],
   authors: [{ name: 'Shri Srivastava' }],
   creator: 'Shri Srivastava',
   openGraph: {
-    title: 'Shri Srivastava — Frontend Developer',
-    description: 'Innovative Frontend Developer with 3+ years of experience in React, Next.js, and modern web technologies',
+    title: 'Shri Srivastava — Back-End Engineer | Full-Stack Developer',
+    description: 'Back-End Engineer with 3+ years of experience in TypeScript, Node.js, React, Next.js, and modern web technologies',
     type: 'website',
     locale: 'en_US',
     url: 'https://shri33.github.io',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shri Srivastava — Frontend Developer',
-    description: 'Innovative Frontend Developer with 3+ years of experience in React, Next.js, and modern web technologies',
+    title: 'Shri Srivastava — Back-End Engineer',
+    description: 'Back-End Engineer with 3+ years of experience in TypeScript, Node.js, React, Next.js, and modern web technologies',
   },
   robots: {
     index: true,
