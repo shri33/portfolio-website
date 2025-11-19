@@ -6,7 +6,7 @@ import GenerativeProjectForm from '@/components/GenerativeProjectForm'
 import Achievements from '@/components/Achievements'
 import { skills, skillCategories } from '@/data/skills'
 import { contactInfo, socials } from '@/data/socials'
-import { Github, Linkedin, Mail, MapPin, Briefcase, GraduationCap, Calendar, Phone, Globe } from 'lucide-react'
+import { Github, Linkedin, Mail, MapPin, Briefcase, GraduationCap, Calendar, Phone, Globe, MessageCircle, Twitter, BookOpen, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 
 const iconMap = {
@@ -14,7 +14,11 @@ const iconMap = {
   linkedin: Linkedin,
   mail: Mail,
   globe: Globe,
-  phone: Phone
+  phone: Phone,
+  discord: MessageCircle,
+  twitter: Twitter,
+  blog: BookOpen,
+  kaggle: BarChart3
 }
 
 export default function HomePage() {

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="aiBenchmarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#aiBenchmarkGrad)"/>
+  
+  <!-- Chart/Graph visualization -->
+  <g transform="translate(150, 400)">
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="500" y2="0" stroke="white" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="-250" stroke="white" stroke-width="3" opacity="0.8"/>
+    
+    <!-- Bar chart -->
+    <rect x="50" y="-120" width="60" height="120" fill="white" opacity="0.7" rx="4"/>
+    <rect x="140" y="-180" width="60" height="180" fill="white" opacity="0.8" rx="4"/>
+    <rect x="230" y="-150" width="60" height="150" fill="white" opacity="0.75" rx="4"/>
+    <rect x="320" y="-200" width="60" height="200" fill="white" opacity="0.9" rx="4"/>
+    <rect x="410" y="-160" width="60" height="160" fill="white" opacity="0.8" rx="4"/>
+    
+    <!-- Trend line -->
+    <polyline points="80,-120 170,-180 260,-150 350,-200 440,-160" 
+              stroke="#FFD700" 
+              stroke-width="3" 
+              fill="none" 
+              opacity="0.9"/>
+    
+    <!-- Data points -->
+    <circle cx="80" cy="-120" r="6" fill="#FFD700"/>
+    <circle cx="170" cy="-180" r="6" fill="#FFD700"/>
+    <circle cx="260" cy="-150" r="6" fill="#FFD700"/>
+    <circle cx="350" cy="-200" r="6" fill="#FFD700"/>
+    <circle cx="440" cy="-160" r="6" fill="#FFD700"/>
+  </g>
+  
+  <!-- ML/AI icon -->
+  <circle cx="650" cy="150" r="40" fill="white" opacity="0.3"/>
+  <text x="650" y="165" font-family="monospace" font-size="40" font-weight="bold" fill="white" text-anchor="middle">ML</text>
+  
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">AI Benchmark Tracker</text>
+  <text x="400" y="555" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">MLOps Experiment Tracking</text>
+</svg>

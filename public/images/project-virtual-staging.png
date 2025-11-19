@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="stagingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#stagingGrad)"/>
+  
+  <!-- Before/After split view -->
+  <g transform="translate(100, 150)">
+    <!-- Before section -->
+    <rect x="0" y="0" width="280" height="300" fill="white" opacity="0.2" rx="10"/>
+    <text x="140" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">BEFORE</text>
+    
+    <!-- Empty room outline -->
+    <rect x="40" y="60" width="200" height="220" fill="white" opacity="0.3" rx="5" stroke="white" stroke-width="2"/>
+    <line x1="40" y1="280" x2="140" y2="180" stroke="white" stroke-width="2" opacity="0.5"/>
+    <line x1="240" y1="280" x2="140" y2="180" stroke="white" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <g transform="translate(420, 150)">
+    <!-- After section -->
+    <rect x="0" y="0" width="280" height="300" fill="white" opacity="0.3" rx="10"/>
+    <text x="140" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">AFTER</text>
+    
+    <!-- Furnished room -->
+    <rect x="40" y="60" width="200" height="220" fill="white" opacity="0.5" rx="5" stroke="white" stroke-width="2"/>
+    
+    <!-- Furniture items (simple shapes) -->
+    <rect x="70" y="200" width="60" height="60" fill="#8B4513" opacity="0.8" rx="3"/>
+    <rect x="150" y="200" width="60" height="60" fill="#8B4513" opacity="0.8" rx="3"/>
+    <rect x="80" y="120" width="120" height="40" fill="#D2691E" opacity="0.7" rx="3"/>
+    <circle cx="140" cy="100" r="15" fill="#FFD700" opacity="0.6"/>
+    
+    <!-- AI sparkle -->
+    <polygon points="240,80 245,90 255,90 247,98 250,108 240,103 230,108 233,98 225,90 235,90" fill="#FFD700" opacity="0.9"/>
+  </g>
+  
+  <!-- Arrow between panels -->
+  <g transform="translate(370, 300)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="white" stroke-width="4" opacity="0.8"/>
+    <polygon points="30,0 20,-8 20,8" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- AI chip icon -->
+  <rect x="360" y="470" width="80" height="50" fill="white" opacity="0.3" rx="5"/>
+  <text x="400" y="502" font-family="monospace" font-size="24" font-weight="bold" fill="white" text-anchor="middle">AI</text>
+  
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Virtual Staging AI</text>
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.9">Shopify Image Optimizer</text>
+</svg>
