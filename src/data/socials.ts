@@ -57,7 +57,7 @@ export const socials: Social[] = [
   {
     name: 'Kaggle',
     url: 'https://www.kaggle.com/shrihero',
-    icon: 'award',
+    icon: 'kaggle',
     username: 'shrihero'
   }
 ]
